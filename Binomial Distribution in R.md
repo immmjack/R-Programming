@@ -1,7 +1,7 @@
 # Binomial Distribution in R
 
 The binomial distribution is one of the most commonly used distribution in statistics. Here explains how to work with the binomial distribution in R using the functions `dbinom`, `pbinom`, `qbinom`, and `rbinom`.
-
+</br>
 
 
 ## `dbinom`
@@ -15,6 +15,7 @@ dbinom(x, size, prob)
 
 
 Put simply, **`dbinom`** finds the probability of getting a certain number of successes **(*x*)** in a certain number of trials **(size)** where the probability of success on each trial is fixed **(prob)**.
+</br>
 
 
 
@@ -29,6 +30,7 @@ Bob makes 60% of his free-throw attempts. If he shoots 12 free throws, what is t
 > dbinom(x = 10, size = 12, prob = .6)
 [1] 0.06385228
 ```
+</br>
 
 
 
@@ -43,6 +45,7 @@ Sasha flips a fair coin 20 times. What is the probability that the coin lands on
 > dbinom(x = 7, size = 20, prob = 0.5)
 [1] 0.07392883
 ```
+</br>
 
 
 
@@ -61,6 +64,7 @@ Put simply, **`pbinom`** returns the area to the left of a given value *q* in th
 ```R
 pbinom(q, size, prob, lower.tail = FALSE)
 ```
+</br>
 
 
 
@@ -75,6 +79,7 @@ Ando flips a fair coin 5 times. What is the probability that the coin lands on h
 > pbinom(2, size = 5, prob = 0.5, lower.tail = FALSE)
 [1] 0.5
 ```
+</br>
 
 
 
@@ -89,6 +94,7 @@ Suppose Tyler scores a strike on 30% of his attempts when he bowls. If he bowls 
 > pbinom(4, size = 10, prob = 0.3)
 [1] 0.8497317
 ```
+</br>
 
 
 
@@ -103,6 +109,7 @@ qbinom(q, size, prob)
 
 
 Put simply, you can use **`qbinom`** to find out the *p*-th quantile of the binomial distribution.
+</br>
 
 
 
@@ -113,6 +120,7 @@ Put simply, you can use **`qbinom`** to find out the *p*-th quantile of the bino
 > qbinom(0.1, 10, 0.4)
 [1] 2
 ```
+</br>
 
 
 
@@ -133,6 +141,7 @@ The function **`rbinom`** generates a **vector of binomial distributed random va
 ```R
 rbinom(n, size, prob)
 ```
+</br>
 
 
 
@@ -143,6 +152,7 @@ rbinom(n, size, prob)
 > rbinom(10, 100, 0.3)
 [1] 30 28 26 26 32 25 30 27 36 33
 ```
+</br>
 
 
 
